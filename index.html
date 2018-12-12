@@ -17,23 +17,21 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map">
 
-      </div>
-      <div aria-label="Restaurants on the map" tabindex='1' id="map"></div>
+      <div role="application" aria-label="Restaurants on the map" tabindex='0' id="map"></div>
     </section>
     <section>
-      <div tabindex='2' aria-label="Filter restaurants" class="filter-options">
+      <div tabindex='0' aria-label="Filter restaurants" class="filter-options">
         <h2>Filter Results</h2>
-        <select tabindex='3' aria-label="Filter by neighbourhood" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select tabindex='0' aria-label="Filter by neighbourhood" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select tabindex='4' aria-label="Filter by cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select tabindex='0' aria-label="Filter by cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
       <div class="ul-div">
-        <ul tab-index='5' aria-label="List of restaurants" id="restaurants-list"></ul>
+        <ul tab-index='0' aria-label="List of restaurants" id="restaurants-list"></ul>
         
       </div>
     </section>

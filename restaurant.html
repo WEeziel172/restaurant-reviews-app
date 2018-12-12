@@ -34,7 +34,7 @@ if ('serviceWorker' in navigator) {
     <!-- End nav -->
   </header>
   <!-- End header -->
-  <ul tabindex='1' aria-role="Breadcrumb navigation" id="breadcrumb" >
+  <ul tabindex='0' aria-label="Breadcrumb navigation" role="navigation" id="breadcrumb" >
       <li><a href="/">Home</a></li>
     </ul>
   <!-- Beginning main -->
@@ -45,14 +45,14 @@ if ('serviceWorker' in navigator) {
     <!-- Beginning map -->
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section tabindex='2' aria-role="Restaurant Info" id="restaurant-container">
-      <h1 tabindex='3' aria-label=" Restaurant name" id="restaurant-name"></h1>
-      <img tabindex='4' aria-label=" Restaurant image" id="restaurant-img">
-      <p tabindex='5' aria-label=" Restaurant cuisine" id="restaurant-cuisine"></p>
-      <p tabindex='6' aria-label=" Restaurant address" id="restaurant-address"></p>
-      <table tabindex='7' aria-label="Restaurant open times" id="restaurant-hours"></table>
+    <section tabindex='0' aria-label="Restaurant Info" id="restaurant-container">
+      <h1 tabindex='0' aria-label=" Restaurant name" id="restaurant-name"></h1>
+      <img tabindex='0' aria-label=" Restaurant image" id="restaurant-img">
+      <p tabindex='0' aria-label=" Restaurant cuisine" id="restaurant-cuisine"></p>
+      <p tabindex='0' aria-label=" Restaurant address" id="restaurant-address"></p>
+      <table tabindex='0' aria-label="Restaurant open times" id="restaurant-hours"></table>
     </section>
-    <section tabindex='8' aria-label="Location on map" id="map-container">
+    <section tabindex='0' role="application" aria-label="Location on map" id="map-container">
       <div id="map">
 
       </div>
@@ -61,7 +61,7 @@ if ('serviceWorker' in navigator) {
 
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section tabindex='9' aria-label="Restaurant reviews" id="reviews-container">
+    <section tabindex='0' aria-label="Restaurant reviews" id="reviews-container">
       <ul id="reviews-list"></ul>
     </section>
 
